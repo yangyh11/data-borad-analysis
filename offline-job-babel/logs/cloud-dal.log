@@ -1,0 +1,10 @@
+2020-05-30 23:16:33,532 | ERROR | main | Logging.scala:91 | - Error initializing SparkContext.
+org.apache.spark.SparkException: A master URL must be set in your configuration
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:379)
+	at org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2313)
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$6.apply(SparkSession.scala:868)
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$6.apply(SparkSession.scala:860)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:860)
+	at com.offline.job.babel.log.LogParseEngine$.main(LogParseEngine.scala:26)
+	at com.offline.job.babel.log.LogParseEngine.main(LogParseEngine.scala)
